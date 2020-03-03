@@ -1,0 +1,24 @@
+{
+  "name": "manuylenko/dumper",
+  "version": "0.2.4",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yuriy Manuylenko",
+      "email": "yuriy@manuylenko.ru"
+    }
+  ],
+  "require": {
+    "ext-mbstring": "*",
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Manuylenko\\Dumper\\": "src/"
+    },
+    "files": [
+      "src/Dumper/functions.php"
+    ]
+  }
+}
+

@@ -1,0 +1,105 @@
+div.t_dump {
+    padding: 0 5px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: "Consolas", "Source Code Pro", "monospace";
+    color: #636c73;
+}
+
+div.t_dump a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.t_dump div.td-bx {
+    display: none;
+    padding-left: 20px;
+}
+
+    div.t_dump div.td-bx.td-show {
+        display: block;
+    }
+
+/* Рекурсия */
+div.t_dump .td-rc {
+    color: #dd5c53;
+}
+
+/* Хеш, Идентификатор объекта */
+div.t_dump .td-h {
+    color: #b853ac;
+}
+
+/* Модификатор доступа */
+div.t_dump .td-m {
+    color: #ef4f56;
+}
+
+/* Ключ массива, Свойство класса */
+div.t_dump .td-p {
+    color: #4c5056;
+}
+
+/* Null, Булево значение */
+div.t_dump .td-n,
+div.t_dump .td-b {
+    color: #e14e55;
+}
+
+/* Число */
+div.t_dump .td-di {
+    color: #2879de;
+}
+
+/* Строка */
+div.t_dump .td-s {
+    color: #189b45;
+}
+
+    div.t_dump .td-s a {
+        color: #cacacf;
+    }
+
+    div.t_dump .td-s a:hover {
+        color: #a2a2a7;
+    }
+
+/* Массив, Объект, Ресурс */
+div.t_dump .td-a,
+div.t_dump .td-o,
+div.t_dump .td-rs {
+    color: #9e9a0c;
+}
+
+/* Неизвестный тип */
+div.t_dump .td-u {
+    color: #7e8a95;
+}
+
+div.t_dump .td-open,
+div.t_dump .td-close {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    opacity: .88;
+}
+div.t_dump .td-open:after,
+div.t_dump .td-close:after {
+    content: '';
+    position: absolute;
+}
+
+div.t_dump .td-open:after {
+    margin-top: 1px;
+    margin-left: -4px;
+    border: 3px solid transparent; border-top: 4px solid #b6b6bb;
+    transition: border-top-color .2s linear;
+}
+
+div.t_dump .td-close:after {
+    margin-top: -1px;
+    margin-left: -2px;
+    border: 3px solid transparent; border-left: 4px solid #cacacf;
+    transition: border-left-color .2s linear;
+}
+
